@@ -12,3 +12,4 @@ if ($result["email"] == $_POST["email"] && password_verify($_POST['password'], $
     $_SESSION["loggedin"] = true;
     $_SESSION["uniqueid"] = $result["uniqueid"];
 }
+header("Location: /");

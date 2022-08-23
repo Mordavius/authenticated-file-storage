@@ -4,6 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit ("Wrong request method");
 }
 
+//csrf protection built into phprouter library
 if (!is_csrf_valid()){
     header("Location: /");
     exit();
@@ -24,11 +25,9 @@ $uniqueid = uniqid();
 require_once("database.php");
 $database = Database::getInstance();
 $conn = $database->getConnection();
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $query = "INSERT INTO users (uniqueid, email, password) VALUES (?,?,?)";
 $stmnt = $conn->prepare($query);
 $stmnt->execute([$uniqueid, $email, $password]);
-
-$_SESSION["uniqueid"] = $result["uniqueid"];
-setcookie("uuid", $result["uniqueid"], time() + (86400 * 30));
+$_SESSION["uniqueid"] = $uniqueid;
 header("Location: /");

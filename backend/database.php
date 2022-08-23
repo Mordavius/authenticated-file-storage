@@ -1,6 +1,7 @@
 <?php
 /*
 * database connection that will be used for all the classes that need database access 
+* borrowed heavily from the internet
 */
 require $_SERVER["DOCUMENT_ROOT"] . '/vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createMutable($_SERVER["DOCUMENT_ROOT"]);

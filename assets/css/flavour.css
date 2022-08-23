@@ -1,0 +1,15 @@
+.box{
+    position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color: rgba(10, 10, 179, 0.655);
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color:white;
+}
+
+body{
+    background-color: lightblue;
+}
