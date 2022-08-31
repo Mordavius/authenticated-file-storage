@@ -5,13 +5,11 @@ class User
 
   public static function userVerified($user)
   {
-    $verified = $_SESSION["uniqueid"] == $user && $_SESSION["loggedin"] == true ? true : false;
-    return $verified;
+    return $_SESSION["uniqueid"] == $user && $_SESSION["loggedin"] == true;
   }
 
   public static function userVerifiedUpload()
   {
-    $verifiedupload = isset($_SESSION["uniqueid"]) && $_SESSION["loggedin"] == true ? true : false;
-    return $verifiedupload;
+    return isset($_SESSION["uniqueid"]) && $_SESSION["loggedin"] == true;
   }
 }
