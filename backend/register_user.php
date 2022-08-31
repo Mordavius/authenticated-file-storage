@@ -1,21 +1,20 @@
 <?php
 //this shouldn't happens thanks to the routing, but just in case.
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    exit ("Wrong request method");
+    exit("Wrong request method");
 }
 
 //csrf protection built into phprouter library
-if (!is_csrf_valid()){
+if (!is_csrf_valid()) {
     header("Location: /");
     exit();
 }
 
 $email = filter_var($_POST["email"], FILTER_VALIDATE_EMAIL);
 
-if ($email === false || $_POST["password"] != $_POST["password-verify"]){
+if ($email === false || $_POST["password"] != $_POST["password-verify"]) {
     header("Location: /");
-}
-else {
+} else {
     $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
 }
 

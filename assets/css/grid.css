@@ -1,65 +1,66 @@
 .wrapper {
-    margin-top: 5vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    gap: 10px;
-  }
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  gap: 10px;
+}
 
 
 .grid {
-    background-color: rgba(10, 10, 179, 0.655);
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(10, 10, 179, 0.655);
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .namecontainer {
-    background-color: white;
-    color: black;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-wrap: break-word;
-    margin-bottom: 3%;
-    margin-top: 5%;
+  background-color: white;
+  color: black;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+  margin-bottom: 3%;
+  margin-top: 5%;
 }
 
-.dropit{
-    margin-top:20%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    margin-bottom: 20%;
+.dropit {
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  margin-bottom: 20%;
 
 }
 
 .dropzone {
-    background-color:deepskyblue;
-    color: white;
-    border-radius: 25px;
-    text-align: center;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
 }
+
 .dimensions {
-    display: block;
-    max-height:20vh;
-    max-width: 90%;
-    width: auto;
-    height: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  display: block;
+  max-height: 20vh;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  video {
-    display: block;
-    max-height:20vh;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
+video {
+  display: block;
+  max-height: 20vh;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  i {
-    margin-top: 10%;
-  }
+i {
+  margin-top: 10%;
+}

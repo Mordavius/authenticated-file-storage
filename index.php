@@ -5,4 +5,3 @@ if ($_SESSION["loggedin"] == true){
 else {
     header("Location: /register");
 }
-?>
