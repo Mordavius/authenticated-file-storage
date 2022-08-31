@@ -21,7 +21,6 @@ var images = document.getElementsByTagName("img");
 var imageCount = images.length;
 for (var j = 0; j <= imageCount; j += 1) {
     images[j].onclick = function(e) {
-        alert(this.id);
         modal.style.display = "block";
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
